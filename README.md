@@ -4,12 +4,16 @@ A comprehensive personal cashflow monitoring application with **Open Finance Bra
 
 ## 🚀 Features
 
-- **Smart Transaction Categorization**: AI-powered categorization using Open Finance Brasil standards
+- **Open Finance Brasil Integration**: Full compliance with OFB standards and APIs
+- **Smart Transaction Categorization**: AI-powered categorization using OFB 3-level hierarchy
+- **Bank Account Connectivity**: Direct integration with Brazilian banks via Open Finance Brasil
+- **Real-time Data Synchronization**: Automated transaction import and balance updates
+- **PIX Payment Integration**: Instant payment capabilities through OFB Payment Initiation APIs
 - **Complete Financial Overview**: Dashboard with spending patterns and insights
 - **Budget Management**: Create and track budgets with real-time alerts
-- **Data Import/Export**: Support for CSV, OFX, and QIF file formats
-- **Local-Only Operation**: No cloud dependencies, complete data privacy
-- **Open Finance Brasil Compliance**: Full adherence to Brazilian financial standards
+- **Data Import/Export**: Support for CSV, OFX, QIF, and OFB standard formats
+- **Local-First Privacy**: Complete data control with optional cloud synchronization
+- **Multi-Bank Support**: Aggregate data from multiple financial institutions
 
 ## 🏗️ Architecture
 
@@ -156,6 +160,19 @@ poetry run pyinstaller --onefile app/main.py
 cd frontend
 npm run build
 ```
+
+## 📖 Documentation
+
+### Core Documentation
+- **[Project Overview](PDR_CashFlow_App.md)**: Complete project requirements and design
+- **[Architecture Decisions](ADR_CashFlow_App.md)**: Technical architecture documentation
+- **[MVP Roadmap](MVP_Roadmap.md)**: Development phases and milestones
+
+### Open Finance Brasil Integration
+- **[OFB Architecture Documentation](docs/OPEN_FINANCE_BRASIL_ARCHITECTURE.md)**: Complete Open Finance Brasil compliance architecture
+- **[API Integration Guide](docs/OPEN_FINANCE_API_INTEGRATION.md)**: Detailed API integration specifications and examples
+- **[Implementation Roadmap](docs/OPEN_FINANCE_IMPLEMENTATION_ROADMAP.md)**: Phase-by-phase implementation strategy
+- **[OFB Developer Portal](https://openfinancebrasil.atlassian.net/wiki/spaces/OF/overview?homepageId=17367041)**: Official Open Finance Brasil documentation
 
 ## 🤝 Contributing
 
