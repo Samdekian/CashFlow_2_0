@@ -9,5 +9,6 @@ python-jose[cryptography]
 passlib[bcrypt]
 python-dotenv
 httpx
+cryptography
 pytest
 pytest-cov

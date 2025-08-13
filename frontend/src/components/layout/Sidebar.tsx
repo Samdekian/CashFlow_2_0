@@ -7,7 +7,8 @@ import {
   ChartPieIcon, 
   ArrowUpTrayIcon, 
   Cog6ToothIcon,
-  BanknotesIcon
+  BanknotesIcon,
+  BuildingLibraryIcon
 } from '@heroicons/react/24/outline';
 
 const Sidebar: React.FC = () => {
@@ -19,8 +20,9 @@ const Sidebar: React.FC = () => {
     { name: 'Categories', href: '/categories', icon: FolderIcon },
     { name: 'Budgets', href: '/budgets', icon: BanknotesIcon },
     { name: 'Analytics', href: '/analytics', icon: ChartPieIcon },
-    { name: 'Import/Export', href: '/import-export', icon: ArrowUpTrayIcon },
-    { name: 'Settings', href: '/settings', icon: Cog6ToothIcon },
+            { name: 'Import/Export', href: '/import-export', icon: ArrowUpTrayIcon },
+        { name: 'Open Finance', href: '/open-finance', icon: BuildingLibraryIcon },
+        { name: 'Settings', href: '/settings', icon: Cog6ToothIcon },
   ];
 
   return (

@@ -3,7 +3,7 @@ Main API router for v1 endpoints.
 """
 from fastapi import APIRouter
 
-from .endpoints import transactions, categories, budgets, analytics, import_export
+from .endpoints import transactions, categories, budgets, analytics, import_export, open_finance
 
 # Create main API router
 api_router = APIRouter()
@@ -37,4 +37,10 @@ api_router.include_router(
     import_export.router,
     prefix="/import-export",
     tags=["import-export"]
+)
+
+api_router.include_router(
+    open_finance.router,
+    prefix="/open-finance",
+    tags=["open-finance"]
 )

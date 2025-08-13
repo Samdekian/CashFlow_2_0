@@ -16,6 +16,7 @@ import Categories from './pages/Categories';
 import Budgets from './pages/Budgets';
 import Analytics from './pages/Analytics';
 import ImportExport from './pages/ImportExport';
+import OpenFinance from './pages/OpenFinance';
 import Settings from './pages/Settings';
 
 // Create a client
@@ -45,6 +46,7 @@ function App() {
                   <Route path="/budgets" element={<Budgets />} />
                   <Route path="/analytics" element={<Analytics />} />
                   <Route path="/import-export" element={<ImportExport />} />
+                  <Route path="/open-finance" element={<OpenFinance />} />
                   <Route path="/settings" element={<Settings />} />
                 </Routes>
               </main>
