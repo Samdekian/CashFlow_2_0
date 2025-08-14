@@ -39,6 +39,7 @@ class Transaction(Base):
     country_code = Column(String(2), default="BR", nullable=False)
     reference_number = Column(String(100), nullable=True)
     institution_code = Column(String(50), nullable=True)
+    external_id = Column(String(100), nullable=True, index=True)  # For OFB transaction IDs
     
     # Additional metadata
     is_recurring = Column(Boolean, default=False)
@@ -108,6 +109,7 @@ class Transaction(Base):
             "country_code": self.country_code,
             "reference_number": self.reference_number,
             "institution_code": self.institution_code,
+            "external_id": self.external_id,
             "is_recurring": self.is_recurring,
             "recurring_pattern": self.recurring_pattern,
             "tags": self.tags,
